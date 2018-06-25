@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="test.js"></script>
+		
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1 class="center">Rock Paper Scissors</h1>
+		<div class="center">
+			<div id="scoreBoard" class="center display">
+				<div class="user display">user</div>
+				<div class="display border" id="counter1">0</div>
+				<div class="display border" id="counter2">0</div>
+				<div class="opponent display">opponent</div>
+			</div>
+		</div>
+		<div class="center">
+			<div id="status" class="display">status</div>
+		</div>
+
+		<!-- <form id="form1">
+			<input type="text" name="inputThing">
+			<button onclick="output()">Submit</button>
+
+		</form>
+		<script>
+			function output(){
+				var x = document.getElementById("form1");
+				console.log(x);
+			}
+		</script> -->
+		<div id="buttonContainer" class="center">
+			<button class="margin rock-img" onclick="rock()"> &#x270A;</button>
+			<button class="margin paper-img" onclick="paper()">&#x270B;</button>
+			<button class="margin scissors-img" onclick="scissors()">&#x270C;</button>
+		</div>
+		<script>
+			function rock(){
+				evaluate("r");
+			}
+
+			function paper(){
+				evaluate("p");
+			}
+
+			function scissors(){
+				evaluate("s");
+			}
+		</script>
+	</body>
+</html>
